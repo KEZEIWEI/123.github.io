@@ -1,0 +1,41 @@
+    <style>
+        div {
+            width: 200px;
+            border: 1px blue solid;
+            margin: 10px;
+        }
+    </style>
+
+
+<body>
+    <div id="if1"></div>
+    <div id="if2"></div>
+    <script>
+        var score = 90,x1,x2;
+        if (score>=90){
+            x1 = "優秀";
+        }else if (score>=60){
+            x1 = "不錯";
+        }else {
+            x1 = "要加油"
+        }
+        document.getElementById("if1").innerHTML = x1;
+        switch(new Date().getDay()){
+            case 0 :
+                x2 = "sunday";
+                break;
+            case 1 :
+                x2 = "monday";
+                break;
+            case 2 :
+                x2  = "tuesday";
+                break;
+            case 3 :
+                x2 = "wednesday";
+                break;            
+        }
+        document.getElementById("if2").innerHTML = x2
+    </script>
+</body>
+
+</html>

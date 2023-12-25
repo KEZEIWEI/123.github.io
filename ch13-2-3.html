@@ -1,0 +1,48 @@
+    <style>
+        div {
+            width: 500px;
+            border: 1px red solid;
+            margin: 10px;
+        }
+    </style>
+
+
+<body>
+    <div id="loop1"></div>
+    <div id="loop2"></div>
+    <div id="loop3"></div>
+    <div id="loop4"></div>
+    <script>
+        var i = 1, x1 = "";
+        while (i < 10) {
+            x1 = x1 + i + " ";
+            i++;
+        }
+        document.getElementById("loop1").innerHTML = x1;
+        var sum = 0, i = 1, x2 = "";
+        while (i < 10) {
+            sum = sum + i;
+            i++;
+        }
+        x2 = sum;
+        document.getElementById("loop2").innerHTML = x2;
+        var i, j, x3 = "";
+        for (i = 1; i < 10; i++) {
+            j = 1;
+            while (j < 10) {
+                x3 += i + "*" + j + "=" + i * j + " ";
+                j++;
+            }
+            x3 += "<br>";
+        }
+        document.getElementById("loop3").innerHTML = x3;
+        var i = 10, x4 = "";
+        do {
+            x4 += i + " ";
+            i--;
+        } while (i > 0)
+        document.getElementById("loop4").innerHTML = x4;
+    </script>
+</body>
+
+</html>

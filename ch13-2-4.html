@@ -1,0 +1,29 @@
+    <style>
+        div {
+            width: 200px;
+            border: 1px red solid;
+            margin: 10px;
+        }
+    </style>
+
+
+<body>
+    <div id="loop1"></div>
+    <div id="loop2"></div>
+    <script>
+        var i, x1 = "";
+        for (i = 1; i < 10; i++) {
+            x1 = x1 + i + " ";
+            if (i == 3) break;
+        }
+        document.getElementById("loop1").innerHTML = x1;
+        var i, x2 = "";
+        for (i = 1; i < 10; i++) {
+            if (i == 3) continue;
+            x2 = x2 + i + " ";
+        }
+        document.getElementById("loop2").innerHTML = x2;
+    </script>
+</body>
+
+</html>
